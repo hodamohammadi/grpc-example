@@ -20,7 +20,7 @@ func main() {
 
 	c := horoscope.NewHoroscopeServiceClient(conn)
 
-	response, err := c.GetHoroscope(context.Background(), &horoscope.GetHoroscopeRequest{Sign: "Scorpio"})
+	response, err := c.GetHoroscope(context.Background(), &horoscope.GetHoroscopeRequest{Sign: horoscope.Sign_SCORPIO})
 	if err != nil {
 		log.Fatalf("Error when calling GetHoroscope: %s", err)
 	}
