@@ -3,7 +3,7 @@ syntax = "proto3";
 package horoscope;
 
 service HoroscopeService {
-    rpc GetHoroscope(GetHoroscopeRequest) returns (GetHoroscopeResponse) {}
+    rpc GetHoroscope (GetHoroscopeRequest) returns (GetHoroscopeResponse) {}
 }
 
 message GetHoroscopeRequest {
@@ -11,7 +11,7 @@ message GetHoroscopeRequest {
 }
 
 message GetHoroscopeResponse {
-    string horoscope = 1;
+    string text = 1;
 }
 
 enum Sign {
