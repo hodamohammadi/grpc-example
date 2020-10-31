@@ -1,3 +1,4 @@
+// Package main runs the horoscope service
 package main
 
 import (
@@ -15,7 +16,6 @@ func main() {
 	}
 
 	s := horoscope.NewServer{}
-
 	grpcServer := grpc.NewServer()
 
 	horoscope.RegisterHoroscopeServiceServer(grpcServer, &s)
